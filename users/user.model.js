@@ -6,9 +6,8 @@ const schema = new Schema({
     email: { type: String, required: true },
     hash: { type: String, required: true },
     name: { type: String, required: true },
-    company: [
-		{ type: mongoose.Schema.ObjectId, ref: 'companies' }
-	],
+    company: { type: String},
+  //  company: [		{ type: mongoose.Schema.ObjectId, ref: 'companies' }	],
 	mobile_verified: { type: Number, default: 0 },
     mobile: { type: String, unique: true, required: true },
     gender: { type: String},

@@ -6,8 +6,8 @@ let transport = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 486,
     auth: {
-        user: 'housieworld@gmail.com',
-        pass: 'pdXepgtwJQi5YbM'
+        user: '******@gmail.com',
+        pass: '******'
     }
 });
 
