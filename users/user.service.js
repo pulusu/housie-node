@@ -84,7 +84,7 @@ async function forgotPassword(userParam) {
 			   }
 			)
 		obj['error']=false; 
-		//obj['userdetails']= user;
+		obj['userdetails']= user;
 		var otpMsg = otpGenerator.generate(6, {  upperCase: false, specialChars: false, digits:true, numbers:true, alphabets:false });
 		var messageObject = { title: otpMsg,  email: user.email }
 		emails.sendOTPEmail(messageObject)
